@@ -2,6 +2,7 @@ import React from 'react';
 import { AiOutlineMenuUnfold } from 'react-icons/ai';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import FreeDelivery from '../../../Asset/BodyOne/Navbar/FreeDelivery.png'
 
 const Menu = () => {
     return (
@@ -36,8 +37,10 @@ const Menu = () => {
                         <li className='flex items-center'>Contact</li>
                     </ul>
                 </div>
-                <div className='flex items-center'>
-                    <Link to='/'>Free Delivery img</Link>
+                <div className='flex items-center '>
+                    <Link className='flex justify-end' to='/'>
+                        <img className='w-3/5' src={FreeDelivery} alt="" />
+                    </Link>
                 </div>
             </div>
         </div>

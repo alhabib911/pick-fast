@@ -8,7 +8,7 @@ import { MdOutlineNotifications } from 'react-icons/md';
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='bg-white'>
             {/* 1st bar start */}
             <div className='border-b-gray-200 border pb-2 text-sm'>
                 <div className='flex justify-evenly mx-28 pt-3'>

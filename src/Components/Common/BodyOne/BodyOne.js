@@ -2,6 +2,7 @@ import React from 'react';
 import BannerSection from './BannerSection';
 import PolicyMenu from './PolicyMenu';
 import FlashSale from './FlashSale';
+import PickMall from './PickMall/PickMall';
 
 const BodyOne = () => {
     return (
@@ -9,6 +10,7 @@ const BodyOne = () => {
             <BannerSection/>
             <PolicyMenu/>
             <FlashSale/>
+            <PickMall/>
         </div>
     );
 };

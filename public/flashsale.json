@@ -1,34 +1,44 @@
 [
     {
-      "id": 1,
-      "Name": "Women Deep V Non-Padded Lace Sheer Bra Underwire 3/4 Cup Bras",
-      "OldPrice": "10",
-      "picture": "https://i.ibb.co/f0b1swm/Flash-sale-one.jpg",
-      "Offer": "2",
-      "NewPrice": "8"
+        "id": 1,
+        "Name": "Women Deep V Non-Padded Lace Sheer Bra Underwire 3/4 Cup Bras",
+        "Picture": "https://i.ibb.co/f0b1swm/Flash-sale-one.jpg",
+        "Selling": "2",
+        "NewPrice": "8"
     },
     {
-      "id": 2,
-      "Name": "OPPO smart watch M7 Pro",
-      "OldPrice": "68",
-      "picture": "https://i.ibb.co/f0b1swm/Flash-sale-one.jpg",
-      "Offer": "10",
-      "NewPrice": "36"
+        "id": 2,
+        "Name": "OPPO smart watch M7 Pro",
+        "Picture": "https://i.ibb.co/SvPyK8t/Flash-sale-two.jpg",
+        "Selling": "10",
+        "NewPrice": "36"
     },
     {
-      "id": 3,
-      "Name": "Ladies Trendy Sunglasses",
-      "OldPrice": "9",
-      "picture": "https://i.ibb.co/f0b1swm/Flash-sale-one.jpg",
-      "Offer": "3",
-      "NewPrice": "6"
+        "id": 3,
+        "Name": "Ladies Trendy Sunglasses",
+        "Picture": "https://i.ibb.co/K0wPGh3/Flash-sale-three.jpg",
+        "Selling": "3",
+        "NewPrice": "6"
     },
     {
-      "id": 4,
-      "Name": "Women's Sling Bag",
-      "OldPrice": "27",
-      "picture": "https://i.ibb.co/f0b1swm/Flash-sale-one.jpg",
-      "Offer": "70",
-      "NewPrice": "9"
+        "id": 4,
+        "Name": "Women's Sling Bag",
+        "Picture": "https://i.ibb.co/27xsX45/Flash-sale-four.jpg",
+        "Selling": "70",
+        "NewPrice": "9"
+    },
+    {
+        "id": 3,
+        "Name": "Ladies Trendy Sunglasses",
+        "Picture": "https://i.ibb.co/K0wPGh3/Flash-sale-three.jpg",
+        "Selling": "3",
+        "NewPrice": "6"
+    },
+    {
+        "id": 3,
+        "Name": "Ladies Trendy Sunglasses",
+        "Picture": "https://i.ibb.co/K0wPGh3/Flash-sale-three.jpg",
+        "Selling": "3",
+        "NewPrice": "6"
     }
-  ]
+]
