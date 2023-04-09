@@ -46,7 +46,7 @@ const FlashSale = () => {
                     )
                 }
             </div>
-            <div className='pt-5'>
+            <div className='py-5'>
                 <img src={brandBanner} alt="" />
             </div>
         </div>

@@ -3,6 +3,8 @@ import BannerSection from './BannerSection';
 import PolicyMenu from './PolicyMenu';
 import FlashSale from './FlashSale';
 import PickMall from './PickMall/PickMall';
+import SingleProduct from './SingleProduct/SingleProduct';
+import HotProduct from './HotProduct/HotProduct';
 
 const BodyOne = () => {
     return (
@@ -11,6 +13,8 @@ const BodyOne = () => {
             <PolicyMenu/>
             <FlashSale/>
             <PickMall/>
+            <HotProduct/>   
+            <SingleProduct/>
         </div>
     );
 };
