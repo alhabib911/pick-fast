@@ -8,7 +8,7 @@ const HomeOne = () => {
         <div>
             <Navbar/>
             <BodyOne/>
-            {/* <Footer/> */}
+            <Footer/>
         </div>
     );
 };
