@@ -7,8 +7,8 @@ const FlashSaleCard = (props) => {
             <img className=' rounded-md' src={Picture} alt="" />
             <div className='mx-1'>
                 <div className='gap-2 pb-3'>
-                    <h4 className='text-center text-3xl font-semibold text-[#F84B2F] pt-1'>${NewPrice}</h4>
-                    <div class="flex justify-between mb-1">
+                    <h4 className='text-center lg:text-3xl md:text-lg text-sm font-semibold text-[#F84B2F] pt-1'>${NewPrice}</h4>
+                    <div class="lg:flex hidden justify-between mb-1">
                         <span class="text-sm font-bold text-[#F84B2F] dark:text-white">SELLING FAST</span>
                         <span class="text-sm font-medium text-[#F84B2F] dark:text-white">{Selling}%</span>
                     </div>

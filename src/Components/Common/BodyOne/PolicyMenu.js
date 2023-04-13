@@ -5,7 +5,7 @@ import { SiQualcomm } from 'react-icons/si';
 
 const PolicyMenu = () => {
     return (
-        <div className='lg:mx-28 md:mx-6 lg:pt-8 md:pt-14 pt-2 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-5 gap-1'>
+        <div className='lg:mx-28 md:mx-6 lg:pt-8 md:pt-14 pt-2 lg:grid md:grid hidden lg:grid-cols-4 md:grid-cols-2  lg:gap-5 gap-1'>
             <div className='flex lg:justify-center md:justify-center justify-start lg:pl-0 md:pl-0 pl-24 py-4 rounded-md border border-gray-100 gap-2 bg-white'>
                 <div className='text-5xl text-[#F84B2F]'>
                     <TbTruckDelivery />
