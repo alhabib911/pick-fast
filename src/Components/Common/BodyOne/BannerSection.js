@@ -6,7 +6,7 @@ import sideBannerTwo from '../../../Asset/BodyOne/BannerSection/side-banner-two.
 const BannerSection = () => {
     return (
         <div>
-            <div className='flex gap-1 mx-28 pt-5'>
+            <div className='flex gap-1 mx-28'>
                 <div className='w-2/3'>
                     <img src={banner} alt="" />
                 </div>

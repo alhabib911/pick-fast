@@ -50,13 +50,13 @@ const Footer = () => {
                 </div>
             </div>
             <div className='mx-20 pb-8 flex items-end justify-between'>
-                <div className='flex justify-start items-end pt-3 w-1/4'>
+            <div className='flex justify-start items-end pt-10 w-1/4 font-semibold'>
                     <div className='flex items-end'>
-                        <h1 className='font-bold text-5xl text-[#F84B2F]'><SiPlayerdotme /> </h1>
-                        <h3 className='pr-2'>Pick</h3>
+                        <h1 className='font-bold text-4xl text-[#F84B2F]'><SiPlayerdotme /> </h1>
+                        <h3 className='pr-2 text-3xl'>Pick</h3>
                     </div>
                     <div>
-                        <h3>Fast</h3>
+                        <h3 className='text-3xl'>Fast</h3>
                     </div>
                 </div>
                 <div>
