@@ -50,15 +50,17 @@ const Footer = () => {
                 </div>
             </div>
             <div className='lg:mx-20 md:mx-5 mx-2 pb-8 lg:flex md:flex hidden items-end justify-between'>
-                <div className='flex justify-start items-end lg:pt-10 pt-4 w-1/4 font-semibold'>
-                    <div className='flex items-end'>
-                        <h1 className='font-bold lg:text-4xl md:text-3xl text-2xl text-[#F84B2F]'><SiPlayerdotme /> </h1>
-                        <h3 className='pr-2 lg:text-3xl md:text-lg text-sm'>Pick</h3>
+                <Link to='/'>
+                    <div className='lg:flex md:flex hidden lg:justify-center md:justify-start items-end lg:pt-10 w-1/4 font-semibold lg:pl-16 md:pl-16 pl-5'>
+                        <div className='lg:flex md:flex lg:items-end'>
+                            <h1 className='font-bold lg:text-4xl md:text-lg lg:flex md:flex hidden text-[#F84B2F]'><SiPlayerdotme /> </h1>
+                            <h3 className='pr-2 lg:text-3xl md:text-base lg:flex md:flex hidden'>Pick</h3>
+                        </div>
+                        <div>
+                            <h3 className='lg:text-3xl md:text-base lg:flex md:flex hidden'>Fast</h3>
+                        </div>
                     </div>
-                    <div>
-                        <h3 className='lg:text-3xl md:text-lg text-sm'>Fast</h3>
-                    </div>
-                </div>
+                </Link>
                 <div>
                     <p>© Copyright Pick Fast Ltd.</p>
                 </div>
