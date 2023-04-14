@@ -6,16 +6,16 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className='bg-white'>
-            <div className='border border-b-[#F84B2F]'>
-                <div className='mx-20 pt-12 pb-16 flex gap-8'>
-                    <div className='w-1/4'>
+            <div className='lg:border md:border lg:border-b-[#F84B2F] md:border-b-[#F84B2F] border-0'>
+                <div className='lg:mx-20 md:mx-5 mx-2 lg:pt-12 md:pt-5 pt-2 lg:pb-16 md:pb-12 pb-10 lg:grid md:grid lg:grid-cols-4 md:grid-cols-2 hidden lg:gap-8 md:gap-5 gap-2'>
+                    <div className='w-full'>
                         <h3 className='font-semibold py-2'>About Us</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt nihil aspernatur omnis possimus laborum necessitatibus!</p>
                     </div>
-                    <div className='w-1/4'>
+                    <div className='w-full'>
                         <h3 className='font-semibold py-2'>Discover</h3>
                         <div>
-                            <ul className='grid grid-cols-2 gap-2'>
+                            <ul className='grid grid-cols-2 gap-2 whitespace-nowrap'>
                                 <Link to='/'><li>Home</li></Link>
                                 <Link to='/'><li>Terms & condition</li></Link>
                                 <Link to='/'><li>Payment & Return</li></Link>
@@ -25,11 +25,11 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className='w-1/4'>
+                    <div className='w-full'>
                         <h3 className='font-semibold py-2'>Need Help</h3>
                         <p>We are Always here for you! Knock us on Messenger anytime or Call our Hotline (10AM - 10PM).</p>
                     </div>
-                    <div className='w-1/4'>
+                    <div className='w-full'>
                         <div>
                             <h3 className='font-semibold py-2'>Contact</h3>
                             <p>info@domain-name.com</p>
@@ -49,14 +49,14 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='mx-20 pb-8 flex items-end justify-between'>
-            <div className='flex justify-start items-end pt-10 w-1/4 font-semibold'>
+            <div className='lg:mx-20 md:mx-5 mx-2 pb-8 lg:flex md:flex hidden items-end justify-between'>
+                <div className='flex justify-start items-end lg:pt-10 pt-4 w-1/4 font-semibold'>
                     <div className='flex items-end'>
-                        <h1 className='font-bold text-4xl text-[#F84B2F]'><SiPlayerdotme /> </h1>
-                        <h3 className='pr-2 text-3xl'>Pick</h3>
+                        <h1 className='font-bold lg:text-4xl md:text-3xl text-2xl text-[#F84B2F]'><SiPlayerdotme /> </h1>
+                        <h3 className='pr-2 lg:text-3xl md:text-lg text-sm'>Pick</h3>
                     </div>
                     <div>
-                        <h3 className='text-3xl'>Fast</h3>
+                        <h3 className='lg:text-3xl md:text-lg text-sm'>Fast</h3>
                     </div>
                 </div>
                 <div>

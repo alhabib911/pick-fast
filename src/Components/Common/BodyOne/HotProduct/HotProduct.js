@@ -84,11 +84,11 @@ const HotProduct = () => {
         }
     ]
     return (
-        <div className='mx-20 bg-white mt-6'>
-            <div className='bg-white pt-4 pl-10 border-b-4 border-[#F84B2F]'>
-                <h2 className='text-[#F84B2F] text-xl pb-3'>Hot Product</h2>
+        <div className='lg:mx-20 bg-white lg:mt-6 md:mt-5 mt-2'>
+            <div className='bg-white pt-4 lg:pl-10 pl-4 border-b-4 border-[#F84B2F]'>
+                <h2 className='text-[#F84B2F] lg:text-xl md:text-lg text-sm pb-3'>Hot Product</h2>
             </div>
-            <div className='grid grid-cols-6 px-10 gap-4 py-6'>
+            <div className='grid lg:grid-cols-6 md:grid-cols-6 grid-cols-3 lg:px-10 px-2 lg:gap-4 md:gap-2 gap-1 py-6'>
                 {
                    hotProduct.slice(0, 6).map(hotProduct => (
                     <HotProductsCard hotProduct={hotProduct}></HotProductsCard>

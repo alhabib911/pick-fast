@@ -174,18 +174,18 @@ const SingleProduct = () => {
         }
     ]
     return (
-        <div className='mx-10 pt-6 px-10 pb-10'>
-            <div className='bg-white pt-4 pl-10 border-b-4 border-[#F84B2F]'>
+        <div className='lg:mx-10 pt-6 lg:px-10 px-2 pb-10'>
+            <div className='bg-white pt-4 lg:pl-10 border-b-4 border-[#F84B2F]'>
                 <h2 className='text-[#F84B2F] text-xl pb-3'>Just For You</h2>
             </div>
-            <div className='grid grid-cols-5 gap-4 pt-3'>
+            <div className='grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 lg:gap-4 md:gap-2 gap-1 pt-3'>
                 {
                     product.map(product => (
                         <SingleProductCard product={product}></SingleProductCard>
                     ))
                 }
             </div>
-            <div className='flex justify-center pt-8'>
+            <div className='flex justify-center pt-8 lg:pb-0 md:pb-0 pb-8'>
                 <button className='border px-28 py-2 text-[#F84B2F] bg-white hover:text-white hover:bg-[#F84B2F] shadow-sm hover:shadow-sm' type="submit">See More</button>
             </div>
         </div>
