@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { MdNotifications } from 'react-icons/md';
 import { IoMdCart } from 'react-icons/io';
 import { BiMessageRoundedDots } from 'react-icons/bi';
+import Notification from './Notification';
 
 
 const Navbar = () => {
@@ -22,10 +23,7 @@ const Navbar = () => {
                     </div>
                     <div className='w-1/2'>
                         <ul className='flex justify-end gap-6'>
-                            <li className='flex items-center'>
-                                <span className='text-lg'><MdNotifications /></span>
-                                Notification
-                            </li>
+                            <Notification/>
                             <li className='font-bold'>Sign Up/ Login</li>
 
                         </ul>
