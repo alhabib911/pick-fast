@@ -15,9 +15,9 @@ const Navbar = () => {
                 <div className='lg:flex md:flex hidden justify-evenly lg:mx-28 md:mx-10 mx-4 lg:pt-3 md:pt-3'>
                     <div className='w-1/2 '>
                         <ul className='flex gap-6'>
-                            <li>Pick Fast App</li>
-                            <li>Track My Order</li>
-                            <li>Support</li>
+                            <Link to='/'><li>Pick Fast App</li></Link>
+                            <Link to='/tracking-order'><li>Track My Order</li></Link>
+                            <Link to='/'><li>Support</li></Link>
                         </ul>
                     </div>
                     <div className='w-1/2'>
@@ -56,21 +56,6 @@ const Navbar = () => {
                 </div>
             </div>
             {/* 2nd bar end */}
-            <div>
-                <div className='lg:mx-28 lg:flex md:flex hidden pt-2 bg-white w-[230px] absolute'>
-                    <ul>
-                        <li className='py-1 hover:bg-gray-100 mt-5 pl-4 text-sm text-gray-600'>Women's & Girls' Fashion</li>
-                        <li className='py-1 hover:bg-gray-100 pl-4 text-sm text-gray-600'>Health & Beauty</li>
-                        <li className='py-1 hover:bg-gray-100 pl-4 text-sm text-gray-600'>Watches, Bags, Jewellery</li>
-                        <li className='py-1 hover:bg-gray-100 pl-4 text-sm text-gray-600'>Men's & Boys' Fashion</li>
-                        <li className='py-1 hover:bg-gray-100 pl-4 text-sm text-gray-600'>Babies & Toys</li>
-                        <li className='py-1 hover:bg-gray-100 pl-4 text-sm text-gray-600'>Electronics Devices</li>
-                        <li className='py-1 hover:bg-gray-100 pl-4 text-sm text-gray-600'>TV & Home Appliances</li>
-                        <li className='py-1 hover:bg-gray-100 pl-4 text-sm text-gray-600'>Groceries & Pets</li>
-                        <li className='py-1 hover:bg-gray-100 pl-4 text-sm text-gray-600 pb-1'>Home & Lifestyle</li>
-                    </ul>
-                </div>
-            </div>
         </div>
     );
 };
