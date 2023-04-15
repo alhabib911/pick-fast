@@ -1,9 +1,9 @@
 import React from 'react';
 import { BiCategory } from 'react-icons/bi';
-import { MdNotifications } from 'react-icons/md';
 import { ImUser } from 'react-icons/im';
 import { Link } from 'react-router-dom';
 import { AiFillHome } from 'react-icons/ai';
+import { IoMdCart } from 'react-icons/io';
 
 const NavbarFooter = () => {
     return (
@@ -19,8 +19,8 @@ const NavbarFooter = () => {
                     <span>Category  </span>
                 </Link></div>
                 <div><Link to='/'>
-                    <span className='flex justify-center text-xl bg-white'><MdNotifications /></span>
-                    <span>Notification</span>
+                    <span className='flex justify-center text-xl bg-white'><IoMdCart /></span>
+                    <span>Cart</span>
                 </Link></div>
                 <div><Link to='/'>
                     <span className='flex justify-center text-xl bg-white'><ImUser /></span>

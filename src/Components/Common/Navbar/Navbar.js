@@ -6,6 +6,7 @@ import { MdNotifications } from 'react-icons/md';
 import { IoMdCart } from 'react-icons/io';
 import { BiMessageRoundedDots } from 'react-icons/bi';
 import Notification from './Notification';
+import Cart from './Cart';
 
 
 const Navbar = () => {
@@ -23,7 +24,8 @@ const Navbar = () => {
                     </div>
                     <div className='w-1/2'>
                         <ul className='flex justify-end gap-6'>
-                            <Notification />
+                            {/* <Notification /> */}
+                            <Link to='/'><li>About Pick Fast</li></Link>
                             <Link to='/log-in'>
                                 <li className='font-bold'>Sign Up/ Login</li>
                             </Link>
@@ -36,7 +38,7 @@ const Navbar = () => {
             {/* 2nc bar start */}
             <div className='flex lg:items-center lg:justify-center justify-start md:pt-5'>
                 <Link to='/'>
-                    <div className='lg:flex md:flex hidden lg:justify-center md:justify-start items-end lg:pt-10 w-1/4 font-semibold lg:pl-16 md:pl-16 pl-5'>
+                    <div className='lg:flex md:flex hidden justify-center  items-center lg:pt-10 md:pt-2 lg:w-1/4 font-semibold lg:pl-16 md:pl-16 pl-5'>
                         <div className='lg:flex md:flex lg:items-end'>
                             <h1 className='font-bold lg:text-4xl md:text-lg lg:flex md:flex hidden text-[#F84B2F]'><SiPlayerdotme /> </h1>
                             <h3 className='pr-2 lg:text-3xl md:text-base lg:flex md:flex hidden'>Pick</h3>
@@ -50,10 +52,7 @@ const Navbar = () => {
                     <input className='lg:w-11/12 md:w-10/12 w-11/12  border bg-gray-100 border-gray-200 lg:py-3 py-0 pl-4 outline-none' type="search" name="search" id="" placeholder='Search in Pick Fast' />
                     <button className='lg:py-3 md:py-3 py-2 px-4 text-center text-xl font-semibold bg-[#F84B2F] text-white' type="submit"><HiOutlineSearch /></button>
                 </div>
-                <div className='flex lg:justify-start md:justify-center justify-end lg:pr-0 md:pr-0 pr-2 lg:gap-16 gap-3 lg:w-1/4 md:1/4 w-1/6 lg:mt-10 '>
-                    <h2 className='lg:text-3xl text-2xl lg:pl-10 md:pl-5 pl-0 text-[#F84B2F] lg:pt-0 pt-2'><IoMdCart /></h2>
-
-                    <div className='lg:text-3xl text-2xl lg:pl-10 pl-0 text-[#F84B2F] lg:pt-0 md:pt-0 pt-2 lg:hidden md:hidden flex'><BiMessageRoundedDots /></div>
+                <div className='lg:flex md:flex hidden justify-center lg:pr-0 md:pr-0 pr-2 lg:gap-16 gap-3 lg:w-1/4 md:w-1/4 w-1/6 lg:mt-10 '>
                     <Link className='lg:flex md:flex hidden lg:bg-[#F84B2F] lg:py-2 lg:px-6 px-2 pt-2 whitespace-nowrap rounded-md lg:text-gray-100 md:text-[#F84B2F] font-semibold' to='/become-seller'>Become a Seller</Link>
                 </div>
             </div>
