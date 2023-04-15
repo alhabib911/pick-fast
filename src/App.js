@@ -4,6 +4,8 @@ import HomeOne from './Components/HomePage/HomeOne/HomeOne';
 import HomeTwo from './Components/HomePage/HomeTwo/HomeTwo';
 import TrackingOrder from './Components/Pages/TrackingOrder/TrackingOrder';
 import BecomeSeller from './Components/Pages/BecomeSeller/BecomeSeller';
+import SignUp from './Components/Pages/Authintication/SignUp';
+import Login from './Components/Pages/Authintication/Login';
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
         <Route path='/home-2' element={<HomeTwo/>}/>
         <Route path='/tracking-order' element={<TrackingOrder/>}/>
         <Route path='/become-seller' element={<BecomeSeller/>}/>
+        <Route path='/sign-up' element={<SignUp/>}/>
+        <Route path='/log-in' element={<Login/>}/>
       </Routes>
     </div>
   );

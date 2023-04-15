@@ -24,8 +24,9 @@ const Navbar = () => {
                     <div className='w-1/2'>
                         <ul className='flex justify-end gap-6'>
                             <Notification />
-                            <li className='font-bold'>Sign Up/ Login</li>
-
+                            <Link to='/log-in'>
+                                <li className='font-bold'>Sign Up/ Login</li>
+                            </Link>
                         </ul>
                     </div>
                 </div>
