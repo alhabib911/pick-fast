@@ -2,11 +2,9 @@ import React from 'react';
 import { SiPlayerdotme } from 'react-icons/si';
 import { HiOutlineSearch } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
-import { MdNotifications } from 'react-icons/md';
 import { IoMdCart } from 'react-icons/io';
-import { BiMessageRoundedDots } from 'react-icons/bi';
-import Notification from './Notification';
-import Cart from './Cart';
+import { ImUser } from 'react-icons/im';
+import './Profile.css'
 
 
 const Navbar = () => {
@@ -52,8 +50,25 @@ const Navbar = () => {
                     <input className='lg:w-11/12 md:w-10/12 w-11/12  border bg-gray-100 border-gray-200 lg:py-3 py-0 pl-4 outline-none' type="search" name="search" id="" placeholder='Search in Pick Fast' />
                     <button className='lg:py-3 md:py-3 py-2 px-4 text-center text-xl font-semibold bg-[#F84B2F] text-white' type="submit"><HiOutlineSearch /></button>
                 </div>
-                <div className='lg:flex md:flex hidden justify-center lg:pr-0 md:pr-0 pr-2 lg:gap-16 gap-3 lg:w-1/4 md:w-1/4 w-1/6 lg:mt-10 '>
-                    <Link className='lg:flex md:flex hidden lg:bg-[#F84B2F] lg:py-2 lg:px-6 px-2 pt-2 whitespace-nowrap rounded-md lg:text-gray-100 md:text-[#F84B2F] font-semibold' to='/become-seller'>Become a Seller</Link>
+                <div className='lg:flex md:flex hidden lg:justify-center md:justify-between items-center lg:pr-0 md:pr-0 pr-2 lg:gap-8 md:gap-5 gap-3 lg:w-1/4 md:w-1/4 w-1/6'>
+                    <div className='lg:flex md:flex hidden'>
+                        <h2 className='absolute bg-[#F84B2F] text-white font-semibold py-[5px] px-[7px] border rounded-e-full rounded-s-full ml-4 mb-2 text-[10px] lg:mt-6'>03</h2>
+                        <Link className='text-2xl lg:mt-10 md:mt-2' to='/cart'><IoMdCart /></Link>
+                    </div>
+                    <div className='lg:flex md:flex hidden'>
+                        <div class="dropdown">
+                            <button class="dropbtn lg:mt-10 md:mt-2"><span className='text-2xl'><ImUser /></span></button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        {/* <Link className='' to='/cart'></Link> */}
+                    </div>
+                    <div>
+                        <Link className='lg:flex md:flex hidden lg:bg-[#F84B2F] lg:py-2 lg:mt-10 md:mt-2 lg:px-6 px-2 whitespace-nowrap rounded-md lg:text-gray-100 md:text-[#F84B2F] font-semibold' to='/become-seller'>Become a Seller</Link>
+                    </div>
                 </div>
             </div>
             {/* 2nd bar end */}
