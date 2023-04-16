@@ -4,7 +4,10 @@ import { HiOutlineSearch } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import { IoMdCart } from 'react-icons/io';
 import { ImUser } from 'react-icons/im';
+import { FiUser } from 'react-icons/fi';
 import './Profile.css'
+import { CiFaceSmile, CiLogin } from 'react-icons/ci';
+import { MdOutlineCancel } from 'react-icons/md';
 
 
 const Navbar = () => {
@@ -34,7 +37,7 @@ const Navbar = () => {
             {/* 1st bar end */}
 
             {/* 2nc bar start */}
-            <div className='flex lg:items-center lg:justify-center justify-start md:pt-5'>
+            <div className='flex items-center  lg:justify-center justify-start md:pt-5'>
                 <Link to='/'>
                     <div className='lg:flex md:flex hidden justify-center  items-center lg:pt-10 md:pt-2 lg:w-1/4 font-semibold lg:pl-16 md:pl-16 pl-5'>
                         <div className='lg:flex md:flex lg:items-end'>
@@ -46,11 +49,11 @@ const Navbar = () => {
                         </div>
                     </div>
                 </Link>
-                <div className='lg:w-1/2 md:w-1/2 w-full lg:mx-0 md:mx-0 mx-2 lg:mt-10 lg:pl-2 md:pl-2 rounded-sm flex'>
-                    <input className='lg:w-11/12 md:w-10/12 w-11/12  border bg-gray-100 border-gray-200 lg:py-3 py-0 pl-4 outline-none' type="search" name="search" id="" placeholder='Search in Pick Fast' />
-                    <button className='lg:py-3 md:py-3 py-2 px-4 text-center text-xl font-semibold bg-[#F84B2F] text-white' type="submit"><HiOutlineSearch /></button>
+                <div className='lg:w-1/2 md:w-2/5 w-full lg:mx-0 md:mx-0 mx-2 lg:mt-10 lg:pl-2 md:pl-2 rounded-sm flex'>
+                    <input className='lg:w-11/12 md:w-9/12 w-11/12  border bg-gray-100 border-gray-200 lg:py-3 md:py-2 pl-4 outline-none' type="search" name="search" id="" placeholder='Search in Pick Fast' />
+                    <button className='lg:py-3 md:py-1 py-2 px-4 text-center text-xl font-semibold bg-[#F84B2F] text-white' type="submit"><HiOutlineSearch /></button>
                 </div>
-                <div className='lg:flex md:flex hidden lg:justify-center md:justify-between items-center lg:pr-0 md:pr-0 pr-2 lg:gap-8 md:gap-5 gap-3 lg:w-1/4 md:w-1/4 w-1/6'>
+                <div className='lg:flex md:flex hidden lg:justify-center md:justify-between items-center lg:pr-0 md:pr-0 pr-2 lg:gap-8 md:gap-2 gap-3 lg:w-1/4 md:w-1/4 w-1/6'>
                     <div className='lg:flex md:flex hidden'>
                         <h2 className='absolute bg-[#F84B2F] text-white font-semibold py-[5px] px-[7px] border rounded-e-full rounded-s-full ml-4 mb-2 text-[10px] lg:mt-6'>03</h2>
                         <Link className='text-2xl lg:mt-10 md:mt-2' to='/cart'><IoMdCart /></Link>
@@ -59,12 +62,32 @@ const Navbar = () => {
                         <div class="dropdown">
                             <button class="dropbtn lg:mt-10 md:mt-2"><span className='text-2xl'><ImUser /></span></button>
                             <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
+                                <Link to='/'>
+                                    <div className='flex items-center gap-1'>
+                                        <span className='text-lg'><FiUser /></span>
+                                        <span>Update Profile</span>
+                                    </div>
+                                </Link>
+                                <Link to='/'>
+                                    <div className='flex items-center gap-1'>
+                                        <span className='text-lg'><CiFaceSmile /></span>
+                                        <span>Manage My Order</span>
+                                    </div>
+                                </Link>
+                                <Link to='/'>
+                                    <div className='flex items-center gap-1'>
+                                        <span className='text-lg'><MdOutlineCancel /></span>
+                                        <span>My Return & Cancellation</span>
+                                    </div>
+                                </Link>
+                                <Link to='/'>
+                                    <div className='flex items-center gap-1'>
+                                        <span className='text-lg'><CiLogin /></span>
+                                        <span>Logout</span>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
-                        {/* <Link className='' to='/cart'></Link> */}
                     </div>
                     <div>
                         <Link className='lg:flex md:flex hidden lg:bg-[#F84B2F] lg:py-2 lg:mt-10 md:mt-2 lg:px-6 px-2 whitespace-nowrap rounded-md lg:text-gray-100 md:text-[#F84B2F] font-semibold' to='/become-seller'>Become a Seller</Link>
